@@ -47,7 +47,7 @@
               :color="card.statusColor"
               class="mt-4"
             >
-              {{ card.value }}
+              <span class="progress-value">{{ card.value }}</span>
             </v-progress-circular>
           </v-card-text>
         </v-card>
@@ -215,5 +215,14 @@ onMounted(() => {
 .border-blue {
   border: 3px solid #2196F3;
   border-radius: 12px;
+}
+
+.progress-value {
+  font-size: 14px;
+  text-align: center;
+  white-space: normal;
+  word-break: break-word;
+  max-width: 70px;
+  display: inline-block;
 }
 </style>
